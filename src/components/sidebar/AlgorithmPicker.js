@@ -10,7 +10,7 @@ const AlgorithmPicker = ({
   actions
 }) => {
   return (
-    <div>
+    <div className="ui grid">
       <Picker
         currentAlgo={pickAlgorithm.jobAlgorithm}
         title="作业调度算法"

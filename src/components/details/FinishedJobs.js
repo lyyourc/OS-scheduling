@@ -5,8 +5,8 @@ import Table from './Table';
 
 const FinishedJobs = ({finishedJobs}) => {
   return (
-    <div>
-      <h3> Finished Jobs: </h3>
+    <div className="sixteen wide column">
+      <h4> Finished Jobs: </h4>
       <Table data={finishedJobs} />
     </div>
   );

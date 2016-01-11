@@ -48,8 +48,8 @@ class Jobs extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3> JCB SITUATION: </h3>
+      <div className="eight wide column">
+        <h4>JCB:</h4>
         <Table data={this.props.jobs} />
       </div>
     );

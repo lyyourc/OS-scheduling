@@ -21,7 +21,7 @@ const Table = ({data}) => {
   const body = data.slice(1) || [];
 
   return (
-    <table>
+    <table className="ui striped table">
       <thead>
         <tr>
           {headings.map(heading =>

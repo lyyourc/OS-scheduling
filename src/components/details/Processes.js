@@ -41,8 +41,8 @@ class Processes extends React.Component {
   render() {
     const {processes} = this.props;
     return (
-      <div>
-        <h3> PCB SITUATION: </h3>
+      <div className="sixteen wide column">
+        <h4> PCB: </h4>
         <Table data={processes} />
       </div>
     );

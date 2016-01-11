@@ -6,7 +6,7 @@ import Details from '../components/details/Details';
 
 const App = () => {
   return (
-    <div>
+    <div className="container ui grid">
       <Header />
       <Sidebar />
       <Details />

@@ -13,8 +13,8 @@ class Timer extends React.Component {
   render() {
     const {now} = this.props;
     return (
-      <div>
-        <h3>当前时间: {now}</h3>
+      <div className="sixteen wide column center aligned">
+        <h3 className="ui teal message">当前时间: {now}</h3>
       </div>
     );
   }

@@ -11,18 +11,21 @@ const RunScheduling = ({
   let intervalID;
 
   return (
-    <div>
-      <button onClick={() => {
-        intervalID = setInterval(timeActions.start, DELAY);
-      }}>
-        RUN IT NOW
+    <div className="ui grid">
+      <button className="ui fluid huge button"
+        onClick={() => {
+          clearInterval(intervalID);
+        }}>
+        STOP
       </button>
 
-      <button onClick={() => {
-        clearInterval(intervalID);
-      }}>
-        STOP BA
+      <button className="ui primary huge fluid button"
+        onClick={() => {
+          intervalID = setInterval(timeActions.start, DELAY);
+        }}>
+        RUN!
       </button>
+
     </div>
   );
 };

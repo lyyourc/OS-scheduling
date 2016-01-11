@@ -2,22 +2,24 @@ import React from 'react';
 
 const Picker = ({currentAlgo, title, choices, onChange}) => {
   return (
-    <div>
-      <h4>{title}</h4>
+    <div className="ui form sixteen wide column">
+      <h4>{title}:</h4>
 
-      <ul>
+      <div className="grouped fields">
       {choices.map(choice =>
-        <li key={choice}>
-          <input type="radio" name={title} id={choice}
-            value={choice} checked={choice === currentAlgo}
-            onChange={e => onChange(e.target.value)}
-          />
-          <label htmlFor={choice}>
-            {choice}
-          </label>
-        </li>
+        <div className="field" key={choice}>
+          <li className="ui radio checkbox">
+            <input type="radio" name={title} id={choice}
+              value={choice} checked={choice === currentAlgo}
+              onChange={e => onChange(e.target.value)}
+            />
+            <label htmlFor={choice}>
+              {choice}
+            </label>
+          </li>
+        </div>
       )}
-      </ul>
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import RunScheduling from './RunScheduling';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="three wide column">
       <AlgorithmPicker />
       <RunScheduling />
     </div>
