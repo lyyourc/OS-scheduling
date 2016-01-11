@@ -1,0 +1,14 @@
+.sidebar {
+  float: left;
+  width: 200px;
+}
+
+.details {
+  float: left;
+  width: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
